@@ -3,7 +3,6 @@ import streamlit as st
 # Configuración de la página
 st.set_page_config(page_title="Mi primera app en Streamlit", page_icon="💡", layout="wide")
 
-# ---------- BARRA LATERAL ----------
 with st.sidebar:
     st.image("logo_uss.jpg", use_container_width=True)
     st.header("Barra lateral")
@@ -16,8 +15,7 @@ with st.sidebar:
         else:
             st.warning("Primero escribe tu nombre.")
 
-# ---------- ÁREA PRINCIPAL ----------
-# Logo centrado
+
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.image("logo_uss.jpg", use_container_width=True)
@@ -32,7 +30,6 @@ st.write(
 
 st.subheader("Flujo básico: entrada → proceso → salida")
 
-# Entrada
 mensaje = st.text_input("Escribe un mensaje:")
 
 # Proceso y salida
