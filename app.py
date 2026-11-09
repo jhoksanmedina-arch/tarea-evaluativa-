@@ -20,7 +20,6 @@ col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.image("logo_uss.jpg", use_container_width=True)
 
-st.subheader("Flujo básico: entrada → proceso → salida")
 
 mensaje = st.text_input("Escribe un mensaje:")
 
