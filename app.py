@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 st.set_page_config(page_title="Mi primera app en Streamlit", page_icon="💡", layout="wide")
 
 with st.sidebar:
@@ -15,15 +14,15 @@ with st.sidebar:
         else:
             st.warning("Primero escribe tu nombre.")
 
-
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.image("logo_uss.jpg", use_container_width=True)
 
+st.title("¡Hola! Bienvenido a mi primera app 👋")
+st.write("Escribe lo que quieras en el cuadro de abajo y yo te lo muestro en pantalla.")
 
 mensaje = st.text_input("Escribe un mensaje:")
 
-# Proceso y salida
 if st.button("Mostrar mensaje", key="boton_principal"):
     if mensaje:
         st.write(f"Escribiste: **{mensaje}**")
